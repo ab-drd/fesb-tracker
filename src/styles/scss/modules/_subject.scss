@@ -1,0 +1,38 @@
+@use "../base/index" as *;
+
+.presence-list {
+  background: $purple-secondary;
+  height: 537px;
+  overflow-y: scroll;
+  padding: 25px 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .presence-button {
+    padding: 16px 36.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 20px;
+
+    .presence-button-text {
+      margin-left: 8px;
+    }
+  }
+
+  .presence-list-title-container {
+    border-bottom: 1px solid $green-primary;
+    margin-bottom: 20px;
+
+    .presence-list-title {
+      color: $green-primary;
+      font-weight: $fw_bold;
+      margin-bottom: 4px;
+      text-transform: none;
+    }
+  }
+}
+
+.presence-list::-webkit-scrollbar {
+  display: none;
+}

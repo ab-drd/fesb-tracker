@@ -1,0 +1,37 @@
+@use "../base/index" as *;
+
+.login {
+  background-color: $purple-secondary;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 45px 28px;
+  color: $white;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .username,
+    .password {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .error-message {
+    color: $FESB-red;
+    font-size: 10px;
+    text-align: center;
+  }
+}

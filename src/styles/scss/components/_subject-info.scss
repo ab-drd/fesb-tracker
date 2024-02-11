@@ -1,0 +1,32 @@
+@use '../base/index' as *;
+.subject-info{
+  background-color: $purple-secondary--dark;
+  border-radius: 0 30px 0 30px ;
+  margin-top: 20px;
+  color: $purple-secondary--light;
+  max-width: 300px;
+
+  .name{
+    padding: 10px;
+    border-top-right-radius: 30px;
+    font-weight: 800;
+  }
+  .info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 20px;
+    gap: 15px 40px;
+
+    & > div{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & > svg{
+      width: 20px;
+      height: 20px;
+    }
+    }
+  }
+  
+}

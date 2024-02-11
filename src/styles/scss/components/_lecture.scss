@@ -1,0 +1,33 @@
+@use "../base/index" as *;
+
+.lecture {
+  background-color: $purple-secondary--dark;
+  padding: 15px 20px 15px 30px;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 2px 2px 2px 1px rgba(252, 252, 252, 0.123);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+
+  .type {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+  } 
+}
+.color-red {
+    background-color: $FESB-red;
+  }
+  .color-blue {
+    background-color: $FESB-blue;
+  }
+  .color-green {
+    background-color: $FESB-green;
+  }

@@ -1,0 +1,30 @@
+@use "../base/index" as *;
+
+.popup-holder {
+  background: transparent;
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    background-color: $white;
+    color: $purple-secondary--dark;
+    border-radius: 0 35px 0 35px;
+    padding: 28px 22px;
+    max-width: 239px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .buttons-holder {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

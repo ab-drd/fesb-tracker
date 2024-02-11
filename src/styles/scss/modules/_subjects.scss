@@ -1,0 +1,61 @@
+@use "../base/index" as *;
+
+.subjects{
+  background-color: $purple-secondary;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 537px;
+  overflow-y: scroll;
+
+  .week{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 15px 0;
+    border-bottom: 1px solid $green-primary;
+
+    .day{
+      border: 1px solid $green-primary;
+      border-radius: 10px;
+      padding: 15px 10px;
+      color: $purple-secondary--light;
+      cursor: pointer;
+
+      &.active{
+        background: $green-gradient;
+        color: $purple-secondary--dark;
+
+      }
+
+      & > p{
+        pointer-events: none;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+
+    }
+  }
+
+  .subject-info-holder{
+    padding: 15px 0;
+  }
+
+  & > button{
+    width: 130px;
+    margin: 20px auto;
+    border-radius: 50px ;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+  ::-webkit-scrollbar-track {
+  background: none; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: $purple-secondary--darker; 
+  border-radius:10px;
+}

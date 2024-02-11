@@ -1,0 +1,19 @@
+@use "../base/index" as *;
+
+header {
+  background-color: $purple-secondary--dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 27px;
+
+  .icon-holder {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    & > svg {
+      cursor: pointer;
+    }
+  }
+}

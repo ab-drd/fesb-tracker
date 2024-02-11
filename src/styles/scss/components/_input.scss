@@ -1,0 +1,19 @@
+@use "../base/index" as *;
+
+input {
+  outline: none;
+  padding: 15px 20px 15px 42px;
+  background: none;
+  border-radius: 8px;
+  border: solid 1px $green-primary;
+  color: $white;
+
+  &::placeholder {
+    color: $white;
+    transition: opacity 0.5s ease;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../base/index" as *;
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: $purple-secondary--dark;
+  align-items: center;
+  padding: 20px 0;
+
+  & > svg {
+    cursor: pointer;
+  }
+}

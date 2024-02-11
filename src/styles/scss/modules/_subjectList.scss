@@ -1,0 +1,30 @@
+@use "../base/index" as *;
+
+.list {
+  background: $purple-secondary;
+  height: 537px;
+  padding: 25px 16px;
+
+  .list-title-container {
+    border-bottom: 1px solid $green-primary;
+
+    .list-title {
+      color: $green-primary;
+      margin-bottom: 4px;
+    }
+  }
+
+  .list-content-container {
+    padding: 16px 0px;
+    border-bottom: 0.3px solid $green-primary;
+
+    .list-content {
+      text-transform: none;
+      cursor: pointer;
+    }
+
+    .list-content:hover {
+      color: $green-primary;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+//font-family
+$ff-Inter: "Inter", sans-serif;
+
+//colors
+$purple-secondary--light: #e2dff2;
+$purple-secondary--darker: #a9a5be;
+$purple-secondary--dark: #262141;
+$purple-secondary: #2e2951;
+
+$FESB-green: #64dd16;
+$FESB-red: #ff5353;
+$FESB-blue: #28b6f6;
+
+$green-gradient: -webkit-linear-gradient(
+  135deg,
+  rgba(42, 163, 158, 1) 0%,
+  rgba(2, 249, 170, 1) 100%
+);
+$green-primary: #01fbab;
+
+$white: #fdfdfd;
+
+//line heights
+$lh-24: 24px;
+$lh-15: 15px;
+$lh-19: 19px;
+
+//font-sizes
+$fs-24: 24px;
+$fs-20: 20px;
+$fs-16: 16px;
+$fs-12: 12px;
+
+// Font weights
+$fw_bold: 700;
+$fw_normal: 400;
+$fw_light: 300;

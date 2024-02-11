@@ -1,0 +1,72 @@
+@use "./variables" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $ff_Inter;
+  font-weight: $fw_normal;
+}
+
+.App {
+  height: 667px;
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px solid black;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ff_Inter;
+  font-weight: $fw_normal;
+}
+
+h1 {
+  // font-size: clamp(2rem, calc(4vw + 1.2rem), 4.5rem);
+  font-size: $fs-20;
+  color: $purple-secondary--light;
+}
+h2 {
+  font-size: $fs-16;
+  @extend .uppercase;
+  color: $purple-secondary--light;
+}
+
+.h2-bold {
+  font-weight: $fw-bold;
+  color: $purple-secondary--dark;
+}
+
+h3 {
+  font-size: $fs-12;
+  color: $purple-secondary--darker;
+  @extend .uppercase;
+}
+
+p{
+  font-size: $fs-12;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}

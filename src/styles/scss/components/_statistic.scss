@@ -1,0 +1,46 @@
+@use "../base/index" as *;
+
+.statistic {
+  padding: 0px 26px;
+
+  .subject-container {
+    background-color: $purple-secondary--dark;
+    box-shadow: -1.43704px 1.43704px 17.2444px rgba(0, 0, 0, 0.06),
+      -1.43704px 1.43704px 1.43704px rgba(0, 0, 0, 0.02),
+      0px 1.43704px 5.74815px rgba(0, 0, 0, 0.02);
+    border-radius: 14.3704px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 17px;
+    padding-bottom: 34px;
+
+    .subject-type {
+      text-transform: none;
+      color: $purple-secondary--light;
+      font-size: 14.3704px;
+      line-height: 29px;
+      margin: 9px 0px 6px;
+    }
+
+    .subject-presence {
+      font-size: 14.3704px;
+      line-height: 29px;
+      color: $purple-secondary--light;
+      opacity: 0.3;
+      margin-bottom: 24.4px;
+    }
+
+    .presence-number {
+      font-size: 28.7407px;
+      line-height: 29px;
+      color: $purple-secondary--light;
+      opacity: 1 !important;
+      margin-right: 3.5px;
+    }
+
+    .doughnut {
+      margin-bottom: 34px;
+    }
+  }
+}

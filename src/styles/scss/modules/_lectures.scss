@@ -1,0 +1,24 @@
+@use "../base/index" as *;
+
+.lectures {
+  background: $purple-secondary;
+  color: $purple-secondary--light;
+  height: 537px;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .text-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .active {
+    color: $green-primary;
+    text-decoration: underline;
+  }
+}
