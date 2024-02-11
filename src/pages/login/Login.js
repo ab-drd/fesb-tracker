@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import { BiUser, BiShareAlt } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -14,8 +14,8 @@ function Login() {
   const login = () => {
     axios
       .post("http://localhost:4200/login", {
-        fesbAccount: username,
-        password: password,
+        FESB_korisnicki_racun: username,
+        Lozinka: password,
       })
       .then((response) => {
         window.localStorage.setItem("token", response.data.accessToken);
@@ -33,7 +33,8 @@ function Login() {
   };
   return (
     <div className="login">
-      <FaFacebookF className="icon-logo" />
+      <FaGraduationCap className="icon-logo" />
+      
 
       <form className="form">
         <div className="username">

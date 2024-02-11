@@ -12,7 +12,7 @@ function Header() {
   useEffect(() => {
     switch (pathname) {
       case "/home":
-        setHeadingText("FESB Tracker");
+        setHeadingText("FESB-tracker");
         setIsHomePage(true);
         break;
       case "/calendar":

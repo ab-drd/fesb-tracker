@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 //font-family
-$ff-Inter: "Inter", sans-serif;
+$ff-Inter: "Lato", sans-serif;
 
 //colors
-$purple-secondary--light: #e2dff2;
-$purple-secondary--darker: #a9a5be;
-$purple-secondary--dark: #262141;
-$purple-secondary: #2e2951;
+$purple-secondary--light: #ddffe7;
+$purple-secondary--darker: #98d7c2;
+$purple-secondary--dark: #167d7f;
+$purple-secondary: #29a0b1;
 
-$FESB-green: #64dd16;
-$FESB-red: #ff5353;
-$FESB-blue: #28b6f6;
+$FESB-green: #17cb65;
+$FESB-red: #9e2525;
+$FESB-blue: #1775a1de;
 
 $green-gradient: -webkit-linear-gradient(
   135deg,
-  rgba(42, 163, 158, 1) 0%,
-  rgba(2, 249, 170, 1) 100%
+  #cc5e3d 0%,
+  #ffa98f 100%
 );
-$green-primary: #01fbab;
+$green-primary: #ffa98f;
 
 $white: #fdfdfd;
 
