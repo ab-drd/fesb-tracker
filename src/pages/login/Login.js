@@ -14,11 +14,11 @@ function Login() {
   const login = () => {
     axios
       .post("http://localhost:4200/login", {
-        fesbAccount: username,
+        username: username,
         password: password,
       })
       .then((response) => {
-        window.localStorage.setItem("token", response.data.accessToken);
+        window.localStorage.setItem("token", response.data.accessToken.trim());
         console.log(response.data.accessToken);
         navigate("/home");
       })

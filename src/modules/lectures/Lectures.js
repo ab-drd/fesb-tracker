@@ -11,7 +11,7 @@ export default function Lectures() {
   const accessToken = window.localStorage.getItem("token");
 
   const [trigger, setTrigger] = useState(false);
-  const { data, error, loading} = useFetch(
+  const { data, error, loading } = useFetch(
     `http://localhost:4200/scheduletoday`, accessToken
   );
 
@@ -37,7 +37,7 @@ export default function Lectures() {
   const handlePresence = async () => {
     await axios.patch("http://localhost:4200/updatescheduletoday", lecture, {
       headers: {
-        Authorization: accessToken,
+        Authorization: accessToken.trim(),
       },
     });
     setTrigger(false);

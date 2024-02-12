@@ -7,13 +7,13 @@ const schedule = require("../mockedValues/schedule_today");
 
 class UserController {
     static async login(req, res) {
-      const { fesbAccount, password } = req.body;
+      const { username, password } = req.body;
 
       console.log(req.body);
 
       try {
         
-        const student = await UserServices.findStudent(fesbAccount);
+        const student = await UserServices.findStudent(username);
         console.log('Student:', student);
       
         if (!student || !student.password) {
@@ -30,7 +30,8 @@ class UserController {
           });
         }
       
-        const accessToken = await JsonWebTokenServices.generateAccessToken(student.id);
+        const accessToken = await JsonWebTokenServices.generateAccessToken(student.id + 1);
+        console.log(accessToken);
       
         return res.status(200).send({
           accessToken,
@@ -86,23 +87,24 @@ class UserController {
 
     static async scheduleToday (req, res) {
         try {
-            const id = req.user.id;
+          console.log(req.body);
+          const id = req.user.id;
 
-            const scheduleById = await UserServices.findTodaysScheduleByStudentId(id);
+          const scheduleById = await UserServices.findTodaysScheduleByStudentId(id);
 
-            if(!scheduleById) {
-                return res.status(401).json({
-                    error: "Student not found",
-                })
-            }
+          if(!scheduleById) {
+              return res.status(401).json({
+                  error: "Student not found",
+              })
+          }
 
-            const schedule = scheduleById.kolegiji;
-            return res.status(200).send({
-                schedule,
-              });
-        } catch (error) {
-            console.error(error);
-        }
+          const schedule = scheduleById.kolegiji;
+          return res.status(200).send({
+              schedule,
+            });
+          } catch (error) {
+              console.error(error);
+          }
     } 
     static async scheduleWeek (req, res) {
         try {

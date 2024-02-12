@@ -1,5 +1,129 @@
 [
   {
+    "id_studenta": 0,
+    "kolegiji": [
+      {
+        "pon": [
+          {
+            "code": "PIS1",
+            "name": "Poslovni informacijski sustavi",
+            "classroom": "B402",
+            "professor": "Stipo Čelar",
+            "time": "16:15-18:00",
+            "type": "predavanje",
+            "group": 0
+          }
+        ]
+      },
+      {
+        "uto": [
+          {
+            "code": "MU1",
+            "name": "Medicinski uređaji",
+            "classroom": "C502",
+            "professor": "Antonio Šarolić",
+            "time": "14:15-16:00",
+            "type": "predavanje",
+            "group": 0
+          },
+          {
+            "code": "GRID1",
+            "name": "Grid računalni sustavi",
+            "classroom": "C502",
+            "professor": "Pleština Vladimir",
+            "time": "16:15-18:00",
+            "type": "predavanje",
+            "group": 0
+          },
+          {
+            "code": "GRID2",
+            "name": "Grid računalni sustavi",
+            "classroom": "C502",
+            "professor": "Pleština Vladimir",
+            "time": "18:15-20:00",
+            "type": "auditorne",
+            "group": 0
+          }
+        ]
+      },
+      {
+        "sri": [
+          {
+            "code": "PAR1",
+            "name": "Paralelno programiranje",
+            "classroom": "B401",
+            "professor": "Damir Krstinić",
+            "time": "14:15-16:00",
+            "type": "predavanje",
+            "group": 0
+          },
+          {
+            "code": "PIS2",
+            "name": "Poslovni informacijski sustavi",
+            "classroom": "B523",
+            "professor": "Ante Turić",
+            "time": "16:00-17:30",
+            "type": "lab",
+            "group": 0
+          }
+        ]
+      },
+      {
+        "cet": [
+          {
+            "code": "MU2",
+            "name": "Medicinski uređaji",
+            "classroom": "Medikol",
+            "professor": "Matković Anđela",
+            "time": "14:00-15:30",
+            "type": "lab",
+            "group": 4
+          },
+          {
+            "code": "PAR2",
+            "name": "Paralelno programiranje",
+            "classroom": "B526",
+            "professor": "Dario Vranješ",
+            "time": "16:30-18:00",
+            "type": "lab",
+            "group": 1
+          },
+          {
+            "code": "MULTI2",
+            "name": "Multimedijski sustavi",
+            "classroom": "B320",
+            "professor": "Davor Meter",
+            "time": "18:30-20:00",
+            "type": "lab",
+            "group": 1
+          }
+        ]
+      },
+      {
+        "pet": [
+          {
+            "code": "UGR1",
+            "name": "Ugradbeni računalni sustavi",
+            "classroom": "A101",
+            "professor": "Sven Gotovac",
+            "time": "11:15-13:00",
+            "type": "predavanje",
+            "group": 0
+          },
+          {
+            "code": "MULTI1",
+            "name": "Multimedijski sustavi",
+            "classroom": "A101",
+            "professor": "Mladen Russo",
+            "time": "13:15-15:00",
+            "type": "predavanje",
+            "group": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id_studenta": 1,
     "kolegiji": [
       {
