@@ -1,6 +1,6 @@
 [
   {
-    "id_studenta": 1,
+    "id_studenta": 0,
     "kolegiji": [
       {
         "code": "MULT1",
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "id_studenta": 2,
+    "id_studenta": 1,
     "kolegiji": [
       {
         "code": "UGR1",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "id_studenta": 3,
+    "id_studenta": 2,
     "kolegiji": [
       {
         "code": "MU1",
@@ -87,7 +87,7 @@
     ]
   },
   {
-    "id_studenta": 4,
+    "id_studenta": 3,
     "kolegiji": [
       {
         "code": "PMRIL1",
@@ -107,5 +107,5 @@
       }
     ]
   },
-  { "id_studenta": 5, "kolegiji": [] }
+  { "id_studenta": 4, "kolegiji": [] }
 ]
