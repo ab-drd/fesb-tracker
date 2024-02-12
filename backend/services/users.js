@@ -12,6 +12,7 @@ class UserServices {
 
         } catch (error) {
             console.error(error);
+            throw new Error(error);
           }
     }
 

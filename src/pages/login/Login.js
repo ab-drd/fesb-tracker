@@ -14,8 +14,8 @@ function Login() {
   const login = () => {
     axios
       .post("http://localhost:4200/login", {
-        FESB_korisnicki_racun: username,
-        Lozinka: password,
+        fesbAccount: username,
+        password: password,
       })
       .then((response) => {
         window.localStorage.setItem("token", response.data.accessToken);

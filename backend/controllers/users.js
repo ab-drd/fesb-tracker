@@ -7,39 +7,41 @@ const schedule = require("../mockedValues/schedule_today");
 
 class UserController {
     static async login(req, res) {
-        try {
-            const {fesbAccount, password} = req.body;
+      const { fesbAccount, password } = req.body;
 
-            const student = await UserServices.findStudent(fesbAccount);
+      console.log(req.body);
 
-            if (!student) {
-                return res.status(401).json({
-                error: 'Student does not exist or password is incorrect',
-                });
-            }
-
-            let isPasswordMatched = false;
-
-            if(password === student.password)
-                isPasswordMatched = true;
-
-            if (!isPasswordMatched) {
-                return res.status(401).json({
-                error: 'Student does not exist or password is incorrect',
-                });
-            }
-
-            const accessToken = await JsonWebTokenServices.generateAccessToken(
-                student.id
-              );
+      try {
         
-              return res.status(200).send({
-                accessToken,
-              });
-
-        } catch (error) {
-            console.error(error);
+        const student = await UserServices.findStudent(fesbAccount);
+        console.log('Student:', student);
+      
+        if (!student || !student.password) {
+          return res.status(401).json({
+            error: 'Student does not exist or password is incorrect',
+          });
         }
+      
+        let isPasswordMatched = password === student.password;
+      
+        if (!isPasswordMatched) {
+          return res.status(401).json({
+            error: 'Student does not exist or password is incorrect',
+          });
+        }
+      
+        const accessToken = await JsonWebTokenServices.generateAccessToken(student.id);
+      
+        return res.status(200).send({
+          accessToken,
+        });
+      } catch (error) {
+        console.error('Error finding student:', error);
+        return res.status(500).json({
+          error: 'Internal server error',
+        });
+      }
+      
     }
 
     static async presenceTotal (req, res) {
